@@ -4,6 +4,56 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
+}
+
+#konfirmasi {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#konfirmasi-box {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 18rem;
+  border-radius: 10px;
+  background-color: rgba(248, 148, 6, 0.8);
+}
+
+.konfirmasi-item {
+  justify-content: space-between;
+  width: 44%;
+  color: aliceblue;
+}
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  opacity: 0.6;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(45deg, red, blue);
+  z-index: 10;
+  bottom: 10%;
+  left: 90%;
+}
+
+.instagram i {
+  color: white;
+  font-size: 3rem;
 }
 
 #navBar {
@@ -87,6 +137,9 @@ body {
 }
 
 #footer {
+  position: relative;
+  bottom: 0;
+
   width: auto;
   height: auto;
 }
@@ -117,6 +170,10 @@ body {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   padding-right: 5px;
+}
+
+#sell {
+  height: 100%;
 }
 
 .sell-container {
@@ -346,6 +403,14 @@ input[type="radio"]:checked + label {
 
   .list-diamond label div {
     font-size: 0.8rem;
+  }
+
+  .instagram {
+    left: 80%;
+  }
+
+  .copyright {
+    font-size: 0.7rem;
   }
 }
 

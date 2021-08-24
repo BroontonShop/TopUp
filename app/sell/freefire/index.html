@@ -23,6 +23,41 @@
 </head>
 
 <body>
+    <div id="konfirmasi">
+        <div id="konfirmasi-box">
+            <div class="d-flex konfirmasi-item">
+
+                <ul class="list-unstyled">
+                    <li>ID</li>
+                    <li>WhatsApp</li>
+                    <li>Diamond</li>
+                    <li>Harga</li>
+                    <li>Pembayaran</li>
+    
+                </ul>
+                <ul class="list-unstyled">
+                    <li>=</li>
+                    <li>=</li>
+                    <li>=</li>
+                    <li>=</li>
+                    <li>=</li>
+    
+                </ul>
+                <ul class="list-unstyled" id="konfirmasi-list">
+                    <li id="konfirmasi-id"></li>
+                    <li id="konfirmasi-wa"></li>
+                    <li id="konfirmasi-diamond"></li>
+                    <li id="konfirmasi-harga"></li>
+                    <li id="konfirmasi-pembayaran"></li>
+    
+                </ul>
+            </div>
+            <div class="konfirm-button">
+                <button class="mx-2 btn btn-outline-danger text-capitalize" onclick="konfirmClose()">cancel</button>
+                <button class="mx-2 btn btn-outline-success text-capitalize" onclick="konfirmSend()">lanjutkan</button>
+            </div>
+        </div>
+    </div>
     <section id="navBar">
         <div class="container" id="container">
             <div id="content" class="content">
@@ -33,9 +68,9 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li>Home</li>
-                    <li>Cek Pesanan</li>
-                    <li>Log In</li>
+                    <li>
+                        <a class="text-decoration-none text-dark" href="../../../index.html">Home</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -52,19 +87,18 @@
                     <h3 class="text-capitalize">paket regular</h3>
                 </div>
                 <div class="upper-content-text">
-                    <div class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, incidunt amet odio
-                        dolorem aut doloremque et in error iusto eius aliquid consequuntur porro voluptatem quibusdam
-                        adipisci sit harum illum, esse optio officia eos nam placeat ratione? Laboriosam temporibus
-                        perspiciatis quasi? Doloribus, nesciunt quasi. Eveniet dignissimos vero placeat labore atque
-                        voluptatibus veniam magni neque, maiores maxime consequuntur, molestiae excepturi quidem amet.
+                    <div class="">Tata cara TopUp, masukan ID lalu pilih jumlah diamond dan pembayaran yang dinginkan
+                        selanjutnya silahkan memasukan no wa yang aktif dan klik beli sekarang, sesudahnya silahkan cek data pastikan
+                        data yang akan dikirimkan dengan benar, setelah itu klik lanjutkan dan lakukan pembayaran melalui sesuai dengan
+                        format pembelian. 
                     </div>
                 </div>
                 <div class="buy mt-3">
                     <div class="mb-3">
                         <h1 class="text-uppercase ">jam buka 08:00-21:00 wib</h1>
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <h3>Jika orderan di pesan diluar jam kerja maka akan diproses keesokan harinya</h3>
                     </div>
-                    <form action="https://formsubmit.co/broontonshop@gmail.com" method="POST">
+                    <form id="data-form" name="data-form" action="https://formsubmit.co/broontonshop@gmail.com" method="POST">
                         <input type="hidden" name="_subject" value="Data Pembeli Brontoon Shop">
                         <input type="hidden" name="_next" value="https://redo-sains.github.io/BroontonShop/app/sell/pembayaran/index.html">
                         <input type="hidden" name="Paket" value="Free Fire Regular">
@@ -77,7 +111,7 @@
                             <div class="input-id">
                                 <input id="input-user" type="text" placeholder="Masukan ID" name="Id" required>                                
                             </div>
-                            <button class="btn btn-success mt-3" type="submit">petunjuk</button>
+                            <button class="btn btn-success mt-3" type="button" onclick="alert('contoh id = 30086385')">petunjuk</button>
                         </div>
                         <input id="price" type="hidden" name="harga" >
                         <div class="sell-box  py-3 px-3 mb-3">
@@ -245,10 +279,20 @@
 
     <section id="footer">
         <div class="content">
-            <div class="info"></div>
+            <div class="info d-flex justify-content-center align-items-center">
+                <div class="d-flex align-items-center h-100 w-75 text-center">
+                    BroontonShop adalah salah satu layanan TopUp terpercaya 100% aman mulai dari game mobile legend dan Free Fire.
+                Hadirnya BroontonShop bertujuan untuk mempermudah apa yang kalian cari yaitu jasa pelayanan TopUp berbagai game.
+                </div>                
+            </div>
             <div class="copyright">Copyright 2021 Broonton Shop | Created By Redo Sains </div>
         </div>
     </section>
+    <div class="instagram">
+        <a href="https://www.instagram.com/broonton_shop/">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
     <script src="script.js"></script>
 </body>
 

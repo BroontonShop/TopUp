@@ -6,6 +6,43 @@ var content = document.getElementById('content');
 var diamond = document.querySelectorAll('.list-diamond label');
 var harga = document.querySelectorAll('.metode-pembayaran .harga');
 var price = document.getElementById('price');
+var konfirmasi = document.getElementById('konfirmasi');
+var sendData = document.getElementById('submit-data');
+var dataForm = document.getElementById('data-form');
+
+let konfirm = () =>{
+    konfirmasi.style.display = "flex";
+}
+
+let konfirmClose = () =>{
+    konfirmasi.style.display = "none";
+}
+
+let konfirmSend = () => {
+
+    dataForm.submit();
+} 
+
+dataForm.addEventListener('submit', (e)=>{
+
+    e.preventDefault();
+    
+    let paket = document.getElementsByName('Paket')[0];
+    let userId = document.getElementsByName('Id')[0];
+    let pembayaran = document.getElementsByName('pembayaran')[0];
+    let diamond = document.getElementsByName('diamond')[0];
+    let dataHarga = document.getElementsByName('harga')[0];
+    let noWa = document.getElementsByName('noWa')[0];
+    
+    document.getElementById('konfirmasi-id').innerHTML = userId.value;
+    document.getElementById('konfirmasi-diamond').innerHTML = diamond.value ;
+    document.getElementById('konfirmasi-harga').innerHTML = dataHarga.value ;
+    document.getElementById('konfirmasi-wa').innerHTML =  noWa.value ;
+    document.getElementById('konfirmasi-pembayaran').innerHTML = pembayaran.value ;
+
+    konfirm();
+    
+})
 
 let open = false;
 const clickHandle = () => {
