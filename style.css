@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100vw;
 }
 
 .instagram {
@@ -300,7 +301,11 @@ body {
 
 @media screen and (max-width: 768px) {
   #store .daftar {
-    width: 80%;
+    width: 70%;
+  }
+
+  #store .daftar .card {
+    height: 20%;
   }
 
   #slide {
@@ -331,11 +336,11 @@ body {
 
   #store .daftar .card {
     width: 100%;
-    height: 25%;
+    height: 30%;
   }
 
   #store .daftar {
-    width: 80%;
+    width: 70%;
     height: 120vh;
   }
 
@@ -402,7 +407,7 @@ body {
   }
 
   #store .daftar {
-    width: 90%;
+    width: 80%;
     height: 100vh;
   }
 
