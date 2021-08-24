@@ -12,9 +12,18 @@ const clickHandle = () => {
 
 console.log(content.offsetHeight);
 
+let multiply = 0;
+
+setInterval(()=>{
+    if(multiply == 3){
+        multiply = 0;
+    }
+    slide.style = 'left: -' + (100 * multiply) + '%';
+    multiply++;
+}, 5000)
+
 for(let a = 0; a<button.length; a++){
 
-    console.log();
     button[a].onclick = function(){
         
         for(let x = 0; x<button.length; x++){

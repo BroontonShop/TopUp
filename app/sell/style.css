@@ -412,6 +412,10 @@ input[type="radio"]:checked + label {
   .copyright {
     font-size: 0.7rem;
   }
+
+  .info-text {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
