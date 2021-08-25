@@ -305,6 +305,10 @@ body {
     height: 130vh;
   }
 
+  .card .icon {
+    width: 23%;
+  }
+
   #store .daftar .card {
     height: 30%;
   }
@@ -317,6 +321,11 @@ body {
     width: 80%;
     height: 90%;
   }
+
+  #container {
+    width: 100% !important;
+    padding: 4px 3% !important;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -324,8 +333,12 @@ body {
     height: 30vh;
   }
 
+  #container {
+    padding: 4px 6% !important;
+  }
+
   .card .icon {
-    width: 30%;
+    width: 25%;
     height: 50%;
     left: 5%;
   }
@@ -341,7 +354,7 @@ body {
   }
 
   #store .daftar {
-    width: 70%;
+    width: 80%;
     height: 120vh;
   }
 
