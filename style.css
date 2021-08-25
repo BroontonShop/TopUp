@@ -158,7 +158,7 @@ body {
 #slide .content {
   width: 60%;
   height: 90%;
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: gray;
   overflow: hidden;
   position: relative;
@@ -225,7 +225,7 @@ body {
   width: 100%;
   height: 30%;
   border: 1px solid gray;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 30px 40px 30px rgb(0, 0, 0, 1);
 }
@@ -324,19 +324,19 @@ body {
   }
 
   .card .icon {
-    width: 35%;
+    width: 30%;
     height: 50%;
     left: 5%;
   }
 
   #slide .content {
-    width: 80%;
+    width: 90%;
     height: 80%;
   }
 
   #store .daftar .card {
     width: 100%;
-    height: 30%;
+    height: 25%;
   }
 
   #store .daftar {
@@ -397,7 +397,7 @@ body {
   }
 
   #slide .content {
-    width: 80%;
+    width: 95%;
     height: 80%;
   }
 
