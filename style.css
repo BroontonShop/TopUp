@@ -302,10 +302,11 @@ body {
 @media screen and (max-width: 768px) {
   #store .daftar {
     width: 70%;
+    height: 130vh;
   }
 
   #store .daftar .card {
-    height: 25%;
+    height: 30%;
   }
 
   #slide {
